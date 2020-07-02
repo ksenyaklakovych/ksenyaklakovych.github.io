@@ -67,10 +67,13 @@ ol {
 	Helper CSS
 -----------------------*/
 .spad {
-	padding-top: 125px;
+	padding-top: 60px;
 	padding-bottom: 110px;
 }
-
+.spad .review-section{
+	padding-top:0px;
+	padding-bottom: 300px;
+}
 .section-title h2 {
 	/* display: inline-block; */
 	color: white;
@@ -176,9 +179,10 @@ ol {
 	position: relative;
 	background-color: #fff;
 	margin-right: 10px;
-	border: 2px solid #40424a;
+	border: 1px solid #40424a;
 	color: #40424a;
 	font-weight: 700;
+	border-radius: 30px;
 }
 
 .site-btn:hover {
@@ -501,12 +505,15 @@ ol {
 /*---------------------
 	Resume section
 ----------------------*/
-.resume-section.with-bg {
-	background-image: url(../img/resume-bg.jpg);
+.resume-section {
+	/* background-image: url(../img/resume-bg.jpg); */
+		background: #f2f7f8;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.resume-section .section-title h2{
+	color: black;
+}
 .resume-list {
 	list-style: none;
 	margin-left: 60px;
@@ -603,11 +610,14 @@ ol {
 ----------------------*/
 .portfolio-warp {
 	padding: 0 60px;
+	text-align: center;
+
 }
 
 .portfolio-item h2 {
-	font-size: 24px;
+	font-size: 20px;
 	margin-bottom: 5px;
+	font-weight:100;
 }
 
 .portfolio-item p {
@@ -616,6 +626,16 @@ ol {
 }
 
 .portfolio-item .port-pic {
+	margin-bottom: 30px;
+	display: block;
+	height: 480px;
+	background: #333;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+	/* position: relative; */
+}
+.portfolio-item .port-pic-small {
 	margin-bottom: 30px;
 	display: block;
 	height: 480px;
@@ -755,6 +775,13 @@ ol {
 	.portfolio-item .port-pic {
 		height: 310px;
 	}
+	.portfolio-item .port-pic-small {
+		height: 70px;
+		width: 70px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
 	.home-three-style .header-section {
 		padding: 50px 30px;
 	}
@@ -788,6 +815,13 @@ ol {
 	.portfolio-item .port-pic {
 		height: 310px;
 	}
+	.portfolio-item .port-pic-small {
+		height: 70px;
+		width: 70px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
 	.portfolio-item {
 		margin-bottom: 30px;
 	}
@@ -813,6 +847,13 @@ ol {
 	}
 	.portfolio-item {
 		margin-bottom: 30px;
+	}
+	.portfolio-item .port-pic-small {
+		height: 30px;
+		width: 30px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
 	}
 	.home-three-style .header-section {
 		position: relative;
@@ -865,6 +906,14 @@ ol {
 		padding-left: 0;
 		border-left: none;
 	}
+	.portfolio-item .port-pic-small {
+		height: 120px;
+		width: 120px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
+
 	.review-slider {
 		padding-left: 0;
 	}
@@ -897,7 +946,9 @@ ol {
 	.home-three-style .main-left-area {
 		padding-top: 0;
 	}
-
+	.section-title h2{
+		font-size: 36px;
+	}
 
 	.info-section .hero-info ul li span {
 		color: #9c9b9b;
@@ -924,4 +975,29 @@ ol {
 	.portfolio-item {
 		margin-bottom: 30px;
 	}
+	.section-title h2{
+		font-size: 20px;
+	}
+	.portfolio-item .port-pic-small {
+		height: 70px;
+		width: 70px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
+
+}
+/* small Mobile :320px. */
+@media only screen and (max-width: 320px) {
+	.section-title h2{
+		font-size: 12px;
+	}
+	.portfolio-item .port-pic-small {
+		height: 70px;
+		width: 70px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
+
 }
