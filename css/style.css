@@ -94,7 +94,6 @@ ol {
 
 }
 
-
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -624,6 +623,11 @@ ol {
 	font-size: 16px;
 }
 
+.image-review{
+	margin-bottom: 40px;
+	/* width: 400px; */
+	/* height: 320px; */
+}
 /*---------------------
 	Portfolio section
 ----------------------*/
