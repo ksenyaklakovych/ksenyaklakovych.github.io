@@ -68,11 +68,11 @@ ol {
 -----------------------*/
 .spad {
 	padding-top: 60px;
-	padding-bottom: 110px;
+	padding-bottom: 50px;
 }
 .spad .review-section{
 	padding-top:0px;
-	padding-bottom: 300px;
+	padding-bottom: 30px;
 }
 .section-title h2 {
 	/* display: inline-block; */
@@ -533,10 +533,7 @@ ol {
 	Resume section
 ----------------------*/
 .features_area {
-  padding-bottom: 170px; }
-  @media (max-width: 1199px) {
-    .features_area {
-      padding-bottom: 50px; } }
+  padding-bottom: 50px; }
 
 .feature_item {
   padding: 45px 25px;
@@ -698,7 +695,8 @@ ol {
 .portfolio-item .port-pic-small {
 	margin-bottom: 30px;
 	display: block;
-	height: 480px;
+	height: 200px;
+	width: 200px;
 	background: #333;
 	background-position: center center;
 	background-size: cover;
@@ -797,9 +795,26 @@ ol {
 /* ===========================
   Responsive
 ==============================*/
+@media only screen and (max-width: 2600px) {
+
+	.portfolio-item .port-pic-small {
+		height: 150px;
+		width: 150px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
+}
 @media only screen and (max-width: 1730px) {
 	.home-two-style .social-section .social-link-warp:after {
 		display: none;
+	}
+	.portfolio-item .port-pic-small {
+		height: 70px;
+		width: 70px;
+		display: block;
+	 margin-left: auto;
+	 margin-right: auto;
 	}
 }
 
