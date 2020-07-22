@@ -482,12 +482,12 @@ ol {
 	padding: 80px 0;
 }
 
-.social-section .social-links {
+/* .social-section .social-links {
 	display: inline-block;
 	background: #f9f9f9;
 	position: relative;
 	z-index: 5;
-}
+} */
 
 .social-section .social-links a {
 	color: #484848;
@@ -501,6 +501,15 @@ ol {
 
 .social-section .social-link-warp h2 {
 	display: inline-block;
+	float: left;
+	font-weight: 400;
+	padding-left: 10px;
+	background: #f9f9f9;
+	position: relative;
+	z-index: 5;
+}
+.social-section .social-link-warp a {
+	display: inline-block;
 	float: right;
 	font-weight: 400;
 	padding-left: 30px;
@@ -509,14 +518,14 @@ ol {
 	z-index: 5;
 }
 
-.social-section .social-link-warp:after {
+.social-section .social-link-warp::after {
 	position: absolute;
 	content: '';
 	width: 50%;
 	height: 2px;
-	left: 23%;
+	left: 30%;
 	top: 50%;
-	margin-top: 1px;
+	margin-top: 25px;
 	background: #cbcbcb;
 }
 
@@ -891,6 +900,7 @@ ol {
 	}
 	.social-section .social-links {
 		display: block;
+		float: left;
 		text-align: center;
 	}
 	.social-link-warp:after {
