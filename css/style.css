@@ -1003,7 +1003,11 @@ ol {
 	}
 	.social-section .social-links {
 		display: block;
+		float: left;
 		text-align: center;
+	}
+	.social-link-warp:after {
+		display: none;
 	}
 	.home-three-style .header-section {
 		position: relative;
@@ -1067,5 +1071,12 @@ ol {
 	}
 	.hero-info ul li {
 		font-size: 30px;
+	}
+	.social-section .social-links {
+		display: block;
+		text-align: center;
+	}
+	.social-link-warp:after {
+		display: none;
 	}
 }
